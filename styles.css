@@ -21,11 +21,6 @@ html{
     font-size: 16px;
 }
 
-@keyframes spin {
-    to{
-        transform: rotate(360deg);
-    }
-}
 
 .loading{
     position: absolute;
@@ -34,13 +29,14 @@ html{
     justify-content: center;
 }
 
-.loading-index{
-    width: 6rem;
-    height: 6rem;
-    border: 5px solid rgb(190, 190, 190);
-    border-radius: 50%;
-    border-top-color: rgba(41, 41, 250, 0.712);
-    animation: spin 0.7s linear infinite;
+.load{
+    height: 12em;
+    width: 12em;
+    display: block;
+}
+
+.hide-loading{
+    display: none;
 }
 
 body{
