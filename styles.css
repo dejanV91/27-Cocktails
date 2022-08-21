@@ -27,6 +27,10 @@ html{
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 100%;
+    z-index: 10;
+    background-color: var(--bgClr);
+    padding-top: 50px;
 }
 
 .load{
@@ -69,12 +73,12 @@ body{
 
 .searchDiv{
     width: 500px;
+    margin-bottom: 80px;
 }
 
 .search{
     width: 100%;
     padding: 8px 10px;
-    margin-bottom: 80px;
     border: none;
     border-radius: 8px;
     font-size: 1.2rem;
