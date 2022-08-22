@@ -12,7 +12,7 @@ const presentDrinks = async () => {
             if (!item) return;
             return `
                     <article class="item">
-                        <a class="linkCocktails" >
+                        <a class="linkCocktails" href="products.html">
                             <div class="imageDiv" data-id=${id}>
                                 <img class="image" src="${image}" alt="${name}">
                             </div>
