@@ -1,11 +1,9 @@
-const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=a";
 
 import fetchDrinks from "./fetchDrinks.js";
 
-const presentDrinks = async () => {
-    const data = await fetchDrinks(URL);    
+const presentDrinks = async (url) => {
+    const data = await fetchDrinks(url);    
     const drinks = data.drinks;
-    
     const listDrinks = drinks
         .map((item) => {
             const {strDrinkThumb: image, strDrink: name, idDrink: id} = item;

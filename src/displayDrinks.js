@@ -1,9 +1,10 @@
-import getElement from "./src/getElement.js";
-import presentDrinks from "./src/presentDrinks.js";
-const products = getElement(".products");
+// import getElement from "./src/getElement.js";
+import presentDrinks from "./presentDrinks.js";
+// const products = getElement(".products");
 
-const displayDrinks = async () => {
-    products.innerHTML = await presentDrinks();
+const displayDrinks = async (url) => {
+   const data = await presentDrinks(url);
+    return data;
 };
 
-export default displayDrinks();
+export default displayDrinks;
